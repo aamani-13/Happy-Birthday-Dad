@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    place-items: center;
+    background: white;
+}
+
+#main {
+    background-color: white;
+    /*display: none;*/
+    width: 98%;
+}
+
+#start-button {
+    display: none;
+    position: absolute;
+    left: calc(48% - 3em);
+    top: calc(48% - 2em);
+    transform-origin: 50% 5em;
+    animation: wiggle 1s linear infinite;
+}
+
+#Heart {
+    position: relative;
+    left: 10px;
+    bottom: 323px;
+    width: 160px;
+    height: 160px;
+    -webkit-animation: 10s pound linear infinite;
+    animation: 10s pound linear infinite;
+    transition: opacity 1s ease;
+}
+
+#Heart:hover {
+    -webkit-animation: 2s pound linear infinite;
+    animation: 2s pound linear infinite;
+}
+
+
+#Calender {
+    position: relative;
+    left: 800px;
+    top: 40px;
+    cursor: pointer;
+}
+
+#calender-page{
+    transition: all 0.3s ease;
+}
+
+#calender-back-page{
+    opacity: 1;
+}
+
+#Calender:hover #calender-page {
+    transform: translateY(400px) rotate(-20deg);
+}
+
+#Cake {
+    position: relative;
+    left: 340px;
+    top: 50px;
+    transform: rotate(-10deg);
+}
+
+#Cake:hover #cherry {
+    animation: bounce 2s ease;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#header {
+    position: relative;
+    right: 400px;
+}
+
+#main-start-button {
+    background: linear-gradient(to top, #ff7a5c 0%, #ff9767 100%);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    position: relative;
+    left: 300px;
+}
+
+#main-start-button:hover {
+    cursor: pointer;
+}
